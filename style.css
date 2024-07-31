@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    text-decoration: none;
+}
+.logo-icon{
+    width: 60px;
+    height: 45px;
+}
+
+.logo{
+    box-shadow: 3px 3px rgb(130, 3, 3);
+}
+body{
+    height: 100vh;
+    text-align: center;
+    /* background-color: white; */
+    padding: 2rem;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.nav{
+    display: none;
+    gap: 50px;
+    justify-content: space-between;
+
+}
+
+@media screen and (min-width:600px) {
+    .nav{
+        display: block;
+    }
+}
+.nav-link{
+    color: #53f1c2;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transform: color 0.1s;
+
+}
+.nav-link:hover{
+    color: #2563eb;
+}
+
+.contact-button{
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #6366F1;
+    color: #ffffff;
+    transform: all 0.1s;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media screen and (min-width:600px) {
+    .contact-button{
+        display:block ;
+    }
+}
+
+.contact-button:hover{
+    background-color: #5254f8;
+}
+
+.menu-button{
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: white;
+
+}
+
+@media screen and (max-width:600px) {
+    .menu-button{
+        display: block;
+    }
+   
+}
+
+.menu-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.header{
+    border: 2px solid black;
+    background-color: bisque;
+    
+}
+
+.Myhome{
+    font-size: 35px;
+    border: 2px solid blue;
+    width: 150px;
+    background-color: rgb(135, 158, 249);
+    border-radius: 8px;
+}
+
+.content1{
+    background-color: rgb(232, 232, 142);
+    /* height:650px; */
+    width:800 ;
+    margin: 20px;
+}
+.main-section{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem;
+    margin: 0 auto;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.content-left{
+    text-align: center;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+    background-color: rgb(184, 227, 235);
+    height: 400px;
+    padding: 18px;
+    
+}
+
+@keyframes slideFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hii{
+    background-color: pink;
+    border: 2px solid rgb(246, 246, 184);
+    width: 50px;
+}
+
+.section-label{
+    font-size: 18px;
+}
+
+.content-right{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Shiva{
+    display: flex;
+    /* border: none; */
+    border-radius: 10px;
+    max-width: 400px;
+    height: 500px;
+    /* box-shadow: 3px 3px rgb(130, 3, 3); */
+
+}
+
+@media screen and (min-width:780px) {
+    .main-section{
+        flex-direction: row;
+    }
+    .content-left{
+        max-width:50%;
+        text-align: left;
+    }
+
+}
+
+.content2{
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    background-color: rgb(227, 122, 176);
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.Aboutme{
+    background-color: rgb(180, 84, 209);
+    height: 50px;  
+    border:2px solid rgb(67, 21, 71) ;
+    border-radius: 10px;
+}
+.label2{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 25px;
+    line-height: 28px;
+}
+
+.content3{
+    max-width: 300px;
+    height: 200px;
+    background-color: rgb(205, 238, 157);
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mailicon{
+    width: 23px;
+    height: 23px ;
+}
+
+.phonelogo{
+    width: 23px;
+    height: 23px ;
+    margin-left: -70px;
+}
+
+.linkedinlogo{
+    width: 23px;
+    height: 23px ;
+    margin-left: -75px;
+}
+
+#content4{
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    background-color: rgb(106, 146, 239);
+    border: 2px solid rgb(2, 12, 82);
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px;  
+}
+
+.Work{
+    border: 2px solid rgb(5, 118, 18) ;
+    border-radius: 10px;
+    background-color: #53f1c2;
+    padding: 3px 10px;
+}
+
+.title4{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    padding: 20px;
+}
+
+.projects{
+    font-size: 20px;
+    
+}
+
+.Para4{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merienda', cursive;
+    font-family: 'Vidaloka', serif;
+    line-height: 26px;
+    padding: 15px 15px 30px 15px;
+}
+
+.para5{
+    font-size: 20px;
+    color: rgb(2, 48, 25);
+    border: 1px dashed green;
+    padding: 10px;
+}
+
+
